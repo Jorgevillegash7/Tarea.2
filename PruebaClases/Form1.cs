@@ -83,7 +83,7 @@ namespace PruebaClases
             for (int i=0; i< numeroDatos;i ++) 
             {
                 dataGridView1.Rows.Add();
-                dataGridView1.Rows[i].Cells[Int32.Parse(numeroColumna1)-1].Value = algoritmo.listaDemandas[i].CantidadRequerida.ToString();
+                dataGridView1.Rows[i].Cells[Int32.Parse(numeroColumna1)-1].Value = algoritmo.listaDemandas[i].suma.ToString();
                 dataGridView1.Rows[i].Cells[Int32.Parse(numeroColumna2)-1].Value = algoritmo.listaDemandas[i].IdDemanda.ToString();
             }
         }

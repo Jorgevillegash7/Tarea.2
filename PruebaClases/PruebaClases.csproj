@@ -49,6 +49,7 @@
     <Compile Include="Clases\Demanda.cs" />
     <Compile Include="Clases\Maquina.cs" />
     <Compile Include="Clases\Producto.cs" />
+    <Compile Include="Clases\VA.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

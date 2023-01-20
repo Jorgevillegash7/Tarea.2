@@ -116,5 +116,34 @@ namespace PruebaClases.MetodosAlgoritmos
             listadatos.Add(desviacionEstandar);
             return Varianza;
         }
+        public double Calcularmedia2(List<double> listadatos);
+        double media2 = 0, suma = 0;
+            // Paso 2: Calcular la variable suma (ACUMULADO)
+            foreach (Demanda media2 in listadatos)
+            {
+                suma = suma + media2.suma;
+            }
+            // Paso 3: Dividir entre total de datos (PROMEDIO)
+            // Paso 3.1: Condicionar a tener datos en la listaDem
+            if (listadatos.Count() > 0)
+            {
+                media2 = suma / listadatos.Count();
+            }
+            return media;
+            public double Iteraciones(int numeroDatos,
+           int limiteInferior, int limiteSuperior, List<double> listadatos, int iteraciones)
+            {
+                double media2 = 0;
+            for (int i = 0; i < iteraciones; i++) 
+            {
+                double media = 0;
+                double desviacionEstandar = 0;
+                LlenarDatosAleatorios(numeroDatos, limiteInferior, limiteSuperior);
+                media = CalcularMedia(listaDemandas);
+                listadatos.Add(media);
+            }
+                    return media2= CalcularMedia2(listadatos);
+        }
+
     }
 }
